@@ -19,8 +19,6 @@ var quotes = [
     {
         quote: "If you tell the truth, you don't have to remember anything.",
         source: "Mark Twain",
-        citation: null,
-        year: null,
         tag: "Author",
 
 
