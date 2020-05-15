@@ -40,4 +40,31 @@ var quotes = [
         tag: ["Philosopher ", " philologist ", " Composer ", " Poet"],
 
     },
+    {
+        quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+        source: "James Cameron",
+
+    },
+    {
+        quote: "Be yourself; everyone else is already taken.",
+        source: "Oscar Wilde",
+        tag: ["author"],
+
+    },
+    {
+        quote: "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
+        source: "J.K. Rowling",
+        citation: "Harry Potter and the Goblet of Fire",
+        year: 2000,
+        tag: ["author ", " fantasy "],
+
+    },
+    {
+        quote: "We accept the love we think we deserve.",
+        source: "Stephen Chbosky",
+        citation: "The Perks of Being a Wallflower",
+        year: 1999,
+        tag: ["author ", " inspirational"],
+
+    },
 ];
