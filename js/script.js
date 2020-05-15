@@ -17,8 +17,9 @@ function getRandomColor() {
     document.getElementById('load-quote').style.backgroundColor = randColor;
     prevRandColor = randColor;
     currentRandColor.push(randColor);
+    // TODO: prevent repeat
     if (currentRandColor[0] === prevRandQuote) {
-        alert("It a repeat color");
+        console.log("repeat color");
     }
     return colors[randColor];
 }
@@ -28,16 +29,15 @@ function getRandomQuote() {
     let randNumb = Math.floor(Math.random() * quotes.length);
     prevRandQuote = randNumb;
     currentRandQuote.push(randNumb);
-
+    // TODO: prevent repeat
     if (currentRandQuote[0] === prevRandQuote) {
-        alert("It a repeat quote");
+        console.log("repeat quote");
     }
     return quotes[randNumb];
 }
 
 /* function to add information parsed from array of quotes
  and inserted into placeholder based on loop */
-
 function printQuote() {
     let randQuote = getRandomQuote();
     getRandomColor();
@@ -57,7 +57,7 @@ function printQuote() {
 
 // Credit: https://www.w3schools.com/jsref/met_win_settimeout.asp
 function quoteTimer() {
-    window.setInterval(printQuote, 7000);
+    window.setInterval(printQuote, 10000);
 }
 
 // Calling and instatiating the functions
@@ -65,7 +65,6 @@ quoteTimer();
 printQuote();
 
 // Load the function printQuote on click and display a new randomly generated quote
-
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
 
